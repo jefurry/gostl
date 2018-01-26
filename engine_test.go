@@ -2,7 +2,7 @@ package gostl
 
 import (
 	"fmt"
-	"github.com/duoyume/gobox"
+	"github.com/jefurry/gobox"
 	"testing"
 )
 

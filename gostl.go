@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"errors"
-	"github.com/duoyume/gobox"
+	"github.com/jefurry/gobox"
 	"io"
 	"regexp"
 	"syscall"

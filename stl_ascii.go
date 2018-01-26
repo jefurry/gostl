@@ -2,7 +2,7 @@ package gostl
 
 import (
 	"bufio"
-	"github.com/duoyume/gobox"
+	"github.com/jefurry/gobox"
 	"io"
 	"regexp"
 	"strconv"

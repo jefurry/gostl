@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/binary"
-	"github.com/duoyume/gobox"
+	"github.com/jefurry/gobox"
 	"io"
 	"os"
 )
