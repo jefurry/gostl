@@ -107,19 +107,19 @@ func (stl *Stl) ReadLine(check bool) ([]byte, error) {
 }
 
 func (stl *Stl) CleanModelName(modelName []byte) []byte {
-	randByte := RandByte(20)
+	randBytes := RandBytes(20)
 	var p []byte
 	p = bytes.TrimSpace(modelName)
 	p = bytes.Replace(p, []byte("solid "), []byte(""), -1)
 
 	reg, err := regexp.Compile("[^_a-zA-Z0-9]+")
 	if err != nil {
-		return randByte
+		return randBytes
 	}
 
 	p = reg.ReplaceAll(p, []byte("_"))
 	if bytes.Equal(p, []byte{}) {
-		return randByte
+		return randBytes
 	}
 
 	return p
